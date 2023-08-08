@@ -108,11 +108,13 @@ else{ let sum = 0;
         return true;
     }
     else{
-        return false;
+        if(sum < totalDue){
+            return false;
+        }
     }
 }
 }
-const output5 = canPay([1, 2, 5],10);
+const output5 = canPay([1, 5, 5],10);
 console.log(output5);
 
 
