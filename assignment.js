@@ -49,22 +49,24 @@ console.log(output2);
         if( arr[i] < 0 ){
             return "Invalid Input"
         }
-        else if(arr[i] > 0) {
-            temp = arr[0];
-            arr[0] = arr[1];
-            arr[1] = temp;
-            return arr;
-     }
-        else{
-            if( arr[0] = arr[1]){
-                return "equal";
+        else if(arr[i] > 0 ) {
+            if( arr[0] < arr[1]){
+                [arr[0], arr[1]] = [arr[1], arr[0]]
+                return arr;
             }
-     
-         }
+            else{
+                if( arr[0] = arr[1]){
+                    return "equal";
+                }
+         
+             }
+          
+     }
+       
  }
 }
 }
-const output3 = sortMaker([4, 4]);
+const output3 = sortMaker([4, 2]);
 console.log(output3);
 
 // 4:::
