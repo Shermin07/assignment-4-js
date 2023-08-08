@@ -71,6 +71,8 @@ function matchFinder(string1, string2) {
 
 
 
+const address = {street:10}
+
 
     function findAddress(obj) {
     if( typeof obj !== "object"){
@@ -81,7 +83,7 @@ function matchFinder(string1, string2) {
         return  obj.street + "," + "__" + "," + obj.society;
       }
       else if( !obj.house && !obj.society){
-        return obj.street 
+      return obj.street + "," + "__" + "," + "__";
       }
       else{
         const result = Object.values(obj);
@@ -89,6 +91,7 @@ function matchFinder(string1, string2) {
       }
     }
  }
+ console.log(findAddress(address));
 
 
 
