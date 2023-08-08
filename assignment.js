@@ -14,8 +14,7 @@ else{
 
 
 }
-const output1 = cubeNumber(3);
-console.log(output1);
+
 
 
 
@@ -35,41 +34,43 @@ function matchFinder(string1, string2) {
     }
 }
 
-const output2 = matchFinder("Peter Parker", "pet");
-console.log(output2);
+
 
  function sortMaker(arr) {
     if( !Array.isArray){
         return "Please provide an array"
     }
     else{
-        for( let i = 0; i < arr.length; i++){
+        for( let i = 0; i <= arr.length; i++){
             
         
-        if( arr[i] < 0 ){
+        if( arr[0] < 0 || arr[1] <0 ){
             return "Invalid Input"
         }
-        else if(arr[i] > 0 ) {
-            if( arr[0] < arr[1]){
-                [arr[0], arr[1]] = [arr[1], arr[0]]
+        else { 
+            if( arr[i] >0 && arr[0] < arr[1] ){
+                const temp = arr[0];
+                [arr[0], arr[1]] = [arr[1], arr[0]];
+                return arr;
+            }
+            else if(arr[0] > arr[1]){
                 return arr;
             }
             else{
-                if( arr[0] = arr[1]){
+                if(arr[0] === arr[1] ){
                     return "equal";
                 }
-         
-             }
-          
-     }
+            }
+           
+           }
+           
        
  }
 }
 }
-const output3 = sortMaker([4, 2]);
-console.log(output3);
 
-// 4:::
+
+
 const address = {street: 10,
     
     society: "Earth Perfect" 
