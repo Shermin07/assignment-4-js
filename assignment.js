@@ -71,17 +71,17 @@ function matchFinder(string1, string2) {
 
 
 
-const address = {street: 10,
-    
-    society: "Earth Perfect" 
-}
+
     function findAddress(obj) {
     if( typeof obj !== "object"){
         return "Please provide a object"
     }
     else{ 
-        if( !obj.house || !obj.society){
+        if( !obj.house ){
         return  obj.street + "," + "__" + "," + obj.society;
+      }
+      else if( !obj.house && !obj.society){
+        return obj.street 
       }
       else{
         const result = Object.values(obj);
@@ -90,11 +90,10 @@ const address = {street: 10,
     }
  }
 
-const output4 = findAddress(address);
-console.log(output4);
 
 
-// 5:::
+
+
 
 function canPay(changeArray, totalDue) {
 if(changeArray.length === 0 ){
