@@ -102,6 +102,7 @@ if(changeArray.length === 0 ){
 else{ let sum = 0;
     for( let i = 0; i < changeArray.length; i++){
         sum = sum + changeArray[i];
+       
     }
     if( sum >= totalDue){
         return true;
@@ -114,7 +115,7 @@ else{ let sum = 0;
 }
 
 }
-const output5 = canPay([1, 5, 5],10);
+const output5 = canPay([1, 2, 5],10);
 console.log(output5);
 
 
