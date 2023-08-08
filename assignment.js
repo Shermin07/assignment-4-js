@@ -38,41 +38,39 @@ function matchFinder(string1, string2) {
 const output2 = matchFinder("Peter Parker", "pet");
 console.log(output2);
 
- /*function sortMaker(arr) {
+ function sortMaker(arr) {
     if( !Array.isArray){
         return "Please provide an array"
     }
     else{
         for( let i = 0; i < arr.length; i++){
-            const num = arr[i];
+            
         
-        if( num < 0 ){
+        if( arr[i] < 0 ){
             return "Invalid Input"
         }
-        else {
-          
-                if(num>0){
-                    arr.sort(function(a,b){
-                        return b-a;
-                    })
-                }
+        else if(arr[i] > 0) {
+            temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+            return arr;
+     }
+        else{
+            if( arr[0] = arr[1]){
+                return "equal";
             }
-        }
-        
-       
-      }
-           
+     
          }
-
-
-
-const output3 = sortMaker([2, 3]);
-console.log(output3);*/
+ }
+}
+}
+const output3 = sortMaker([4, 4]);
+console.log(output3);
 
 // 4:::
 const address = {street: 10,
-    house: "15A",
-    society: "Earth Perfect"
+    
+    society: "Earth Perfect" 
 }
     function findAddress(obj) {
     if( typeof obj !== "object"){
@@ -80,7 +78,7 @@ const address = {street: 10,
     }
     else{ 
         if( !obj.house || !obj.society){
-        return obj.house = obj.street + "," + "__" + "," + obj.society;
+        return  obj.street + "," + "__" + "," + obj.society;
       }
       else{
         const result = Object.values(obj);
@@ -110,10 +108,7 @@ else{ let sum = 0;
     else{
         return false;
     }
-   
-   
 }
-
 }
 const output5 = canPay([1, 2, 5],10);
 console.log(output5);
