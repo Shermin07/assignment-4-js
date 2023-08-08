@@ -114,7 +114,5 @@ else{ let sum = 0;
     }
 }
 }
-const output5 = canPay([1, 5, 5],10);
-console.log(output5);
 
 
