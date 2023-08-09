@@ -73,7 +73,7 @@ function matchFinder(string1, string2) {
 
 const address = {
     street:10,
-    house ="15A"
+    house :"15A",
     society : "Earth Perfect"
     
     }
