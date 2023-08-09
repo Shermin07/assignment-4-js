@@ -11,9 +11,8 @@ else{
     return result;
    }
 }
-
-
 }
+
 
 
 
@@ -30,9 +29,11 @@ function matchFinder(string1, string2) {
         else{
             return false;
         }
-
-    }
+     }
 }
+
+
+
 
 
 
@@ -63,20 +64,14 @@ function matchFinder(string1, string2) {
             }
            
            }
-           
-       
- }
+}
 }
 }
 
 
 
-const address = {
-    street:10,
-    house :"15A",
-    society : "Earth Perfect"
-    
-    }
+
+
 
 
     function findAddress(obj) {
@@ -87,7 +82,7 @@ const address = {
         if( !obj.house ){
             return obj.street + "," + "__" + "," + obj.society;  
       }
-      else if( !obj.society){
+      else if( !obj.society ){
        
         return obj.street + ",__,__";
       
@@ -99,7 +94,7 @@ const address = {
     }
    
  }
- console.log(findAddress(address));
+ 
 
 
 
@@ -125,5 +120,6 @@ else{ let sum = 0;
     }
 }
 }
+
 
 
