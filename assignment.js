@@ -71,7 +71,12 @@ function matchFinder(string1, string2) {
 
 
 
-const address = {street:10}
+const address = {
+    street:10,
+    house ="15A"
+    society : "Earth Perfect"
+    
+    }
 
 
     function findAddress(obj) {
@@ -80,16 +85,19 @@ const address = {street:10}
     }
     else{ 
         if( !obj.house ){
-        return  obj.street + "," + "__" + "," + obj.society;
+            return obj.street + "," + "__" + "," + obj.society;  
       }
-      else if( !obj.house && !obj.society){
-      return obj.street + "," + "__" + "," + "__";
+      else if( !obj.society){
+       
+        return obj.street + ",__,__";
+      
       }
       else{
         const result = Object.values(obj);
         return result;
       }
     }
+   
  }
  console.log(findAddress(address));
 
