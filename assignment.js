@@ -89,11 +89,12 @@ function matchFinder(string1, string2) {
       }
       else{
         const result = Object.values(obj);
-        return result;
+        return result.toString();
       }
     }
    
  }
+ 
  
 
 
