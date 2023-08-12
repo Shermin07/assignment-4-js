@@ -1,21 +1,39 @@
-// getElementsByTag:::
+//getElementByTag:::
 
-const fruitsContainer = document.getElementsByTagName("div");
-console.log(fruitsContainer);
+const headings1 = document.getElementsByTagName("h1")[0];
+headings1.innerHTML = "hi there";
+headings1.style.color = "red";
 
-// getElementsById:::
+const headings2 = document.getElementsByTagName("h2")[0];
+headings2.innerHTML = "hi finland"
 
-const mango = document.getElementById("mango");
-mango.innerHTML = "go to school";
-mango.style.color = "green";
-mango.style.fontSize = "1.5rem";
+const headings3 = document.getElementsByTagName("h3")[0];
+headings3.innerHTML = "hiiiiiii";
 
-// getElementsByClass::::
+// getElementById:::
 
-const apple = document.getElementsByClassName("apple");
-apple.innerHTML = "jackfruit";
+const fruit = document.getElementById("mango");
+fruit.innerHTML = "watermelon";
+fruit.style.color = "green"
+
+ document.getElementById("visit").innerText = "places i want to visit";
 
 
-// 
-const studentList = document.getElementsByClassName("studentA");
-studentList.innerHTML = "acdhhl";
+//  getElementsByClass:::
+
+
+
+
+
+
+// querySelector::
+
+document.querySelector("a").innerText = "visit youtube";
+document.querySelector("a").style.color= "red";
+document.querySelector("li a").innerText = "tutorial-first";
+document.querySelector("div a").innerText = "visit GOOGLE"
+document.querySelector("div a").style.color = "green"
+
+// querySelectorAll:::::
+
+document.querySelectorAll("section li") 
