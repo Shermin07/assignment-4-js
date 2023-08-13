@@ -36,4 +36,9 @@ document.querySelector("div a").style.color = "green"
 
 // querySelectorAll:::::
 
-document.querySelectorAll("section li") 
+
+const sections = document.querySelectorAll("section");
+for(const section of sections){
+    section.style.border = "2px solid blue";
+    section.style.padding = "5px"
+}

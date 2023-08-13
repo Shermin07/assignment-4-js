@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM EVENTS</title>
+</head>
+<body>
+<h1> DOM event special</h1>
+<!--1 no -->
+ <button onclick="console.log(7)">click me</button>
+
+<!--2 no -->
+
+<button id="btn-second" onclick="document.body.style.backgroundColor = 'yellow'" > make yellow</button>
+
+<!--3 no-->
+<button onclick="makeRed()">make red</button>
+<!--4 no-->
+<button id="make-blue">make blue</button>
+
+<!--4 another no-->
+<button id="make-purple">make purple</button>
+
+<!--5-addeventlistener -->
+
+<button id="make-pink">make pink</button>
+
+<!--5 another no-->
+<button id="make-green">make green</button>
+
+
+
+
+
+
+
+    <script src="event.js"></script>
+</body>
+</html>
