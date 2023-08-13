@@ -34,7 +34,6 @@ document.getElementById("text-field").addEventListener('keypress', function(even
 // 6 no:::: ja likhbo tai asbe piramid er moto, 
 
 document.getElementById("text-field").addEventListener('keyup', function(event){
-    // console.log(event)
-     //console.log(event.target);
+    
     console.log(event.target.value);
  });
