@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete exploring
+
+    </title>
+</head>
+<body>
+    <!--input a likhe button a click korle h1 none hoye jabe-->
+    <h1 id="secret-info">My secret info</h1>
+    <input type="text" id="delete-confirm"
+    placeholder="please type delete">
+    <button id="btn-delete">disabled</button>
+
+    
+
+
+    <script>
+      document.getElementById("btn-delete").addEventListener('click', function(){
+        const secret = document.getElementById("secret-info");
+        secret.style.display = "none"
+      })  
+
+    </script>
+    
+</body>
+</html>
