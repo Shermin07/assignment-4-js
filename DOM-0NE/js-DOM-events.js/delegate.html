@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegate exploring</title>
+</head>
+<body>
+
+    <h1 >Exploring delegate event</h1>
+    <section >
+        <ul id="list-container">
+
+            <li class="item">banana</li>
+            <li class="item ">grape</li>
+            <li class="item">mango</li>
+            <li class="item">apple</li>
+            <li class="item">orange</li>
+
+        </ul>
+        <button id="btn-add-item">add item</button>
+    </section>
+    
+
+
+    <script>
+        document.getElementById("btn-add-item").addEventListener('click', function(){
+            const container = document.getElementById("list-container");
+
+            const li = document.createElement("li");
+            li.innerText = "new fruit";
+            li.classList.add("item");
+            container.appendChild(li)
+
+        })
+
+
+
+
+    const items = document.getElementsByClassName("item");
+    console.log(items);
+    for(const item of items){
+        item.addEventListener('click', function(event){
+            //console.log(item);
+            //console.log(item.parentNode);
+            //console.log(event.target.parentNode);
+            console.log(event.target.parentNode.removeChild(event.target));
+        })
+    }
+   
+
+    </script>
+</body>
+</html>
