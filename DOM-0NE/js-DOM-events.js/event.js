@@ -27,3 +27,9 @@ const makeGreen = document.getElementById("make-green");
 makeGreen.addEventListener('click', function makeGreen(){
     document.body.style.backgroundColor = "green";
 })
+/// 6 final:::
+
+document.getElementById("make-tomato").addEventListener('click',function makeTomato(){
+    document.body.style.backgroundColor = 'tomato';
+});
+
